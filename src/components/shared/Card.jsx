@@ -1,5 +1,5 @@
 function Card({children, reverse=false}) {
-    console.log(children)
+   // console.log(children)
 
     // conditional class
   //return <div className={` card ${reverse && 'reverse'}`}>{children}</div>
