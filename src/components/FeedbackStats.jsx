@@ -1,6 +1,6 @@
 function FeedbackStats({feedback}) {
     //calculating average  and average store reduce array value
-   const average =  feedback.reduce((acc,cur )=>{
+   let average =  feedback.reduce((acc,cur )=>{
         return (acc + cur.rating)
    }, 0) /feedback.length
 

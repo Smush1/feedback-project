@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import FeedbackList from "./components/FeedbackList";
 import FeedbackData from "./data/feedbackData";
 import FeedbackStats from "./components/FeedbackStats";
+import FeedbackForm from "./components/FeedbackForm";
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
   return (<>
     < Header bgColor="rgba(0,0,0,0.4)" textColor="#ff6a95" />
     <div className="container">
+      <FeedbackForm />
       <FeedbackStats feedback={feedback} /> 
       <FeedbackList feedback={feedback} handleDelete={deleteFeedback}/>
     </div>
